@@ -1,0 +1,87 @@
+
+body {
+  padding: 25px;
+  background-color: rgb(197, 189, 189);
+  color: black;
+  
+}
+
+.dark-mode {
+  background-color: rgb(29, 28, 28);
+  color: rgb(197, 189, 189);
+
+    .correct-answer {
+      background-color: #063d02; /* mörkgrön */
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    .wrong-answer {
+      background-color: #680505; /* mörkröd */
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    .missed-answer {
+      background-color: #714601; /* mörkgul/brun */
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    #result {
+    background: rgb(197, 189, 189);
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    }
+}
+
+.refresh {
+    min-width: 20%;
+    border-radius: 4px;
+    background: rgb(203, 106, 198);
+    padding: 20px;
+    place-content: end;
+}
+
+
+.switch {
+    min-width: 20%;
+    border-radius: 4px;
+    background: rgb(106, 196, 203);
+    padding: 20px;
+    place-content: end;
+}
+
+.check {
+    width: 100%;
+    border-radius: 4px;
+    background:  #fff3b0;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+#result {
+    background: rgb(241, 227, 227);
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+}
+
+.correct-answer {
+  background-color: #c8f7c5; /* ljusgrön */
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.wrong-answer {
+  background-color: #be8080; /* ljusröd */
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.missed-answer {
+  background-color: #fff3b0; /* ljusgul */
+  border-radius: 4px;
+  padding: 2px 4px;
+}

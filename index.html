@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVickan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<br>
+
+<h1>Quiz-time!</h1>
+<br>
+<h2>Tema: Neuropsykiatriska funktionsnedsättningar</h2>
+<input type="checkbox"> = Fyll i alla korrekta påståenden
+<input type="radio"> = Endast ett svarsalternativ är korrekt
+<br><br><br>
+<button class="switch" onclick="mode()">Växla läge</button>
+<button class="refresh" onclick="clearResult()">Rensa svar</button>
+<br><br><br><br>
+
+
+<!-- Fråga 1 (2 rätt) -->
+<fieldset>
+  <legend>1. Vilka påståenden kan vara sanna om styrkor hos personer med ADHD?</legend>
+  <label><input type="checkbox" name="q1" value="A"> Förmåga att växla snabbt mellan idéer</label><br>
+  <label><input type="checkbox" name="q1" value="B"> Kreativitet och idérikedom</label><br>
+  <label><input type="checkbox" name="q1" value="C"> Extrem detaljfokusering i allt</label><br>
+  <label><input type="checkbox" name="q1" value="D"> Hög energinivå</label>
+  <!-- Rätt svar: B och D -->
+</fieldset>
+<br>
+
+
+<!-- Fråga 2 (2 rätt) -->
+<fieldset>
+  <legend>2. Vilka påståenden stämmer om hyperfokus?</legend>
+  <label><input type="checkbox" name="q2" value="A"> Man kan bli extremt fokuserad på något man älskar</label><br>
+  <label><input type="checkbox" name="q2" value="B"> Det gäller bara skolarbete</label><br>
+  <label><input type="checkbox" name="q2" value="C"> Tiden kan upplevas försvinna snabbt</label><br>
+  <label><input type="checkbox" name="q2" value="D"> Det är ett tecken på dålig uppmärksamhet</label>
+  <!-- Rätt svar: A och C -->
+</fieldset>
+<br>
+
+<!-- Fråga 3 -->
+<fieldset>
+  <legend>3. Vilket är ett viktigt syfte med att öka kunskapen om NPF i skolan?</legend>
+  <label><input type="radio" name="q3" value="A"> A) Att alla ska få lika svåra uppgifter</label><br>
+  <label><input type="radio" name="q3" value="B"> B) Att minska stress och skapa bättre anpassningar</label><br>
+  <label><input type="radio" name="q3" value="C"> C) Att elever ska tävla mer</label><br>
+  <label><input type="radio" name="q3" value="D"> D) Att minska lärarnas ansvar</label>
+</fieldset>
+<br>
+
+<!-- Fråga 4 -->
+ <fieldset>
+  <legend>4. Många med NPF har specialintressen som kan utvecklas till värdefulla styrkor.</legend>
+  <label><input type="radio" name="q4" value="Sant"> Sant</label><br>
+  <label><input type="radio" name="q4" value="Falskt"> Falskt</label>
+</fieldset>
+<br>
+
+ <!-- Fråga 5 (2 rätt) -->
+<fieldset>
+  <legend>5. Vilka av följande är vanliga utmaningar för personer med NPF?</legend>
+  <label><input type="checkbox" name="q5" value="A"> Svårigheter med tid och planering</label><br>
+  <label><input type="checkbox" name="q5" value="B"> Extrem koncentration på saker de hatar</label><br>
+  <label><input type="checkbox" name="q5" value="C"> Känslighet för sinnesintryck</label><br>
+  <label><input type="checkbox" name="q5" value="D"> Inga utmaningar alls</label>
+  <!-- Rätt svar: A och C -->
+</fieldset>
+<br>
+
+<!-- Fråga 6 (3 rätt) -->
+<fieldset>
+  <legend>6. Vad kan hjälpa många med NPF i vardagen?</legend>
+  <label><input type="checkbox" name="q6" value="A"> Tyngdtäcken eller lugna miljöer</label><br>
+  <label><input type="checkbox" name="q6" value="B"> Tidsstöd som timer eller appar</label><br>
+  <label><input type="checkbox" name="q6" value="C"> Kritiska kommentarer</label><br>
+  <label><input type="checkbox" name="q6" value="D"> Påminnelser eller checklistor</label>
+  <!-- Rätt svar: A, B, D -->
+</fieldset>
+<br>
+
+
+<!-- Fråga 7 (2 rätt) -->
+<fieldset>
+  <legend>7. Vilka är vanliga anpassningar i skolan för elever med NPF?</legend>
+  <label><input type="checkbox" name="q7" value="A"> Tydliga instruktioner</label><br>
+  <label><input type="checkbox" name="q7" value="B"> Extra prov under stressiga situationer</label><br>
+  <label><input type="checkbox" name="q7" value="C"> Stödstrukturer och visuella scheman</label><br>
+  <label><input type="checkbox" name="q7" value="D"> Att eleven lämnas mer ensam</label>
+  <!-- Rätt svar: A och C -->
+</fieldset>
+<br>
+
+<!-- Fråga 8  -->
+  <fieldset>
+  <legend>8. NPF handlar inte om svagheter – det handlar om att hitta rätt strategier.</legend>
+  <label><input type="radio" name="q8" value="Sant"> Sant</label><br>
+  <label><input type="radio" name="q8" value="Falskt"> Falskt</label>
+</fieldset>
+<br>
+
+<!-- Fråga 9 (2 rätt) -->
+<fieldset>
+  <legend>9. Vad innebär neurodiversitet?</legend>
+  <label><input type="checkbox" name="q9" value="A"> Att hjärnor fungerar på olika sätt</label><br>
+  <label><input type="checkbox" name="q9" value="B"> Att personer med NPF bör anpassas till normen</label><br>
+  <label><input type="checkbox" name="q9" value="C"> Att det bara finns ett rätt sätt att lära på</label><br>
+  <label><input type="checkbox" name="q9" value="D"> Att olikheter i hur vi tänker är naturliga</label>
+  <!-- Rätt svar: A och C -->
+</fieldset>
+<br>
+
+<!-- NYA FRÅGOR MED 2–3 RÄTTA SVAR -->
+
+<!-- Fråga 10 (3 rätt) -->
+<fieldset>
+  <legend>10. Vilka av följande kan vara specialintressen hos personer med NPF?</legend>
+  <label><input type="checkbox" name="q10" value="A"> Tåg och kartor</label><br>
+  <label><input type="checkbox" name="q10" value="B"> Naturvetenskap och fakta</label><br>
+  <label><input type="checkbox" name="q10" value="C"> Spel och programmering</label><br>
+  <label><input type="checkbox" name="q10" value="D"> Ointresse för allt</label>
+  <!-- Rätt svar: A, B, C -->
+</fieldset>
+<br>
+
+<!-- Fråga 11 -->
+ <fieldset>
+  <legend>11. Vilket av följande är en vanlig styrka hos många autistiska personer?</legend>
+  <label><input type="radio" name="q11" value="A"> A) Impulsivitet</label><br>
+  <label><input type="radio" name="q11" value="B"> B) Imaginationsförmåga</label><br>
+  <label><input type="radio" name="q11" value="C"> C) Logiskt och strukturerat tänkande</label><br>
+  <label><input type="radio" name="q11" value="D"> D) Ointresse för rutiner</label>
+</fieldset>
+<br>
+
+<!-- Fråga 12 -->
+<fieldset>
+  <legend>12. Tydliga rutiner kan skapa trygghet för många med NPF.</legend>
+  <label><input type="radio" name="q12" value="Sant"> Sant</label><br>
+  <label><input type="radio" name="q12" value="Falskt"> Falskt</label>
+</fieldset>
+<br><br><br>
+
+<button class="check" onclick="checkCheckbox()"> - RÄTTA MITT QUIZ - </button>
+
+<div id="result"></div>
+
+</body>
+</html>
