@@ -41,7 +41,6 @@ body {
     border-radius: 4px;
     background: rgb(203, 106, 198);
     padding: 20px;
-    place-content: end;
 }
 
 
@@ -50,7 +49,6 @@ body {
     border-radius: 4px;
     background: rgb(106, 196, 203);
     padding: 20px;
-    place-content: end;
 }
 
 .check {
