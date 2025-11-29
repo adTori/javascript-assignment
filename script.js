@@ -55,7 +55,7 @@ function checkCheckbox() {
                 label.classList.add("wrong-answer");
             }
             else if (correct.includes(input.value) && !input.checked) {
-                // Facit vid miss av ifyllning eller korrekt svar
+                // Facit vid miss av ifyllning/korrekt svar
                 label.classList.add("missed-answer");
             }
         });
@@ -83,7 +83,7 @@ function showResult(points) {
         result.innerHTML = `Bra jobbat! Du fick ${points} av ${total} rätt.`;
     } else {
         result.style.color = "rgba(178, 0, 0, 1)";
-        result.innerHTML = `Underkänt. Du fick ${points} av ${total} rätt – försök igen. ❤️`;
+        result.innerHTML = `Ajdå! Du fick ${points} av ${total} rätt – försök igen. ❤️`;
     }
 }
 
