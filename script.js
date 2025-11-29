@@ -4,15 +4,7 @@ function mode() {
    select.classList.toggle("dark-mode");
 }
 
-// TAR BORT GAMLA FÄRGMARKERINGAR
-function clearMarkings() {
-    document.querySelectorAll(".correct-answer, .wrong-answer, .missed-answer")
-        .forEach(marked => {
-            marked.classList.remove("correct-answer", "wrong-answer", "missed-answer");
-        });
-}
-
-// RÄTT SVAR
+// FACIT (RÄTT SVAR)
 const correctAnswers = {
     q1: ["B", "D"],
     q2: ["A", "C"],
@@ -28,7 +20,32 @@ const correctAnswers = {
     q12: ["Sant"]
 };
 
-// HUVUDFUNKTION
+// VISAR RESULTATET
+function showResult(points) {
+    let total = Object.keys(correctAnswers).length;
+    let result = document.querySelector("#result");
+
+    if (points === total) {
+        result.style.color = "rgba(68, 108, 3, 1)";
+        result.innerHTML = `✨ Riktigt bra jobbat! Du fick ${points} av ${total} rätt! ✨`;
+    } else if (points >= total / 2) {
+        result.style.color = "rgba(179, 80, 10, 1)";
+        result.innerHTML = `Bra jobbat! Du fick ${points} av ${total} rätt.`;
+    } else {
+        result.style.color = "rgba(178, 0, 0, 1)";
+        result.innerHTML = `Ajdå! Du fick ${points} av ${total} rätt – försök igen. ❤️`;
+    }
+}
+
+// TAR BORT GAMLA FÄRGMARKERINGAR
+function clearMarkings() {
+    document.querySelectorAll(".correct-answer, .wrong-answer, .missed-answer")
+        .forEach(marked => {
+            marked.classList.remove("correct-answer", "wrong-answer", "missed-answer");
+        });
+}
+
+// HUVUDFUNKTION FÖR RÄTTNINGSKNAPP
 function checkCheckbox() {
     clearMarkings();
 
@@ -68,23 +85,6 @@ function checkCheckbox() {
     }
 
     showResult(points);
-}
-
-// VISAR RESULTATET
-function showResult(points) {
-    let total = Object.keys(correctAnswers).length;
-    let result = document.querySelector("#result");
-
-    if (points === total) {
-        result.style.color = "rgba(68, 108, 3, 1)";
-        result.innerHTML = `✨ Riktigt bra jobbat! Du fick ${points} av ${total} rätt! ✨`;
-    } else if (points >= total / 2) {
-        result.style.color = "rgba(179, 80, 10, 1)";
-        result.innerHTML = `Bra jobbat! Du fick ${points} av ${total} rätt.`;
-    } else {
-        result.style.color = "rgba(178, 0, 0, 1)";
-        result.innerHTML = `Ajdå! Du fick ${points} av ${total} rätt – försök igen. ❤️`;
-    }
 }
 
 // TAR BORT FÄRGMARKERINGAR SAMT TEXT MED RESULTAT
