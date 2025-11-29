@@ -72,7 +72,7 @@ function checkCheckbox() {
                 label.classList.add("wrong-answer");
             }
             else if (correct.includes(input.value) && !input.checked) {
-                // Facit vid miss av ifyllning/korrekt svar
+                // Facit vid miss av ifyllt/korrekt svar
                 label.classList.add("missed-answer");
             }
         });
