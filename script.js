@@ -25,7 +25,7 @@ function showResult(points) {
     let total = Object.keys(correctAnswers).length;
     let result = document.querySelector("#result");
 
-    if (points === total) {
+    if (points >= total * 0.75) {
         result.style.color = "rgba(68, 108, 3, 1)";
         result.innerHTML = `✨ Riktigt bra jobbat! Du fick ${points} av ${total} rätt! ✨`;
     } else if (points >= total / 2) {
