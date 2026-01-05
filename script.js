@@ -20,7 +20,7 @@ const correctAnswers = {
     q12: ["Sant"]
 };
 
-// VISAR RESULTATET
+// VISAR RESULTATET (Object.keys returnerar en array med alla properties i ett object)
 function showResult(points) {
     let total = Object.keys(correctAnswers).length;
     let result = document.querySelector("#result");
@@ -45,7 +45,7 @@ function clearMarkings() {
         });
 }
 
-// HUVUDFUNKTION FÖR RÄTTNINGSKNAPP
+// HUVUDFUNKTION FÖR RÄTTNINGSKNAPP ([...inputs] ger samma som ["${question}"])
 function checkCheckbox() {
     clearMarkings();
 
