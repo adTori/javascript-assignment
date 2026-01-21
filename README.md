@@ -1,5 +1,4 @@
-School assignment to make a Quiz
-
+### School assignment to make a Quiz
 
 The requirements were:
 
